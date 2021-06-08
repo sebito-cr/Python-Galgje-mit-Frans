@@ -11,3 +11,9 @@ def checkWin():
             return(False)
     return(True)
 
+def renderWoord():
+        for a in range(len(GeheimWoord)):
+            if GeheimWoord[a] in GeradenLetters:
+                print(GeheimWoord[a], '', end='')
+            else:
+
