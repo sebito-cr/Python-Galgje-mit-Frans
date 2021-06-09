@@ -16,5 +16,8 @@ def renderWoord():
             if GeheimWoord[a] in GeradenLetters:
                 print(GeheimWoord[a], '', end='')
             else:
+                print('? ', end='')
         print('')
         print('-' * len(GeheimWoord))
+
+renderWoord()
