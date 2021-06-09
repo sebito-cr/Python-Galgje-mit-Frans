@@ -21,3 +21,10 @@ def renderWoord():
         print('-' * len(GeheimWoord))
 
 renderWoord()
+
+while True:
+    letter = input('raad een letter of typ het woord  ')
+    if len(letter) == 1:
+        if letter in GeradenLetters:
+            print('Die letter had je al geraden...')
+            renderWoord()
