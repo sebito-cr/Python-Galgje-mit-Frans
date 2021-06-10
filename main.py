@@ -52,3 +52,7 @@ while True:
         print('Je hebt het woord geraden, en dus gewonnen!')
         break
     else:
+        print('Fout woord!')
+        print('-2')
+        levens -= 2
+        renderWoord()
