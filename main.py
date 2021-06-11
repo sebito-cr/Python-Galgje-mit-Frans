@@ -32,31 +32,31 @@ while True:
     letter = input('raad een letter of typ het woord  ')
     if len(letter) == 1:
         if letter in GeradenLetters:
-            print('Die letter had je al geraden...')
+            print('Clowntje die letter had je al geraden...')
             renderWoord()
         else:
             GeradenLetters += letter
             if letter in GeheimWoord:
-                print('Goed. Die letter zit wel in het woord')
+                print('Lets go. Die letter zit wel in het woord')
                 renderWoord()
                 if checkWin():
-                    print('Je hebt alle letters geraden, en dus gewonnen!')
+                    print('Lets go je hebt alle letters geraden, en dus gewonnen!')
                     print('Het woord was: ' + GeheimWoord)
                     break
             else:
-                print('Fout. Die letter zit niet in het woord')
+                print('Oof. Die letter zit niet in het woord')
                 print('-1')
                 levens -= 1
                 renderWoord()
     elif letter == GeheimWoord:
-        print('Je hebt het woord geraden, en dus gewonnen!')
+        print('Lets go je hebt het woord geraden, en dus gewonnen!')
         break
     else:
-        print('Fout woord!')
+        print('Oof fout woord!')
         print('-2')
         levens -= 2
         renderWoord()
     if levens <= 0:
-        print('Je hebt verloren! Het woord was ' + GeheimWoord)
+        print('Bif oof je hebt verloren! Het woord was ' + GeheimWoord)
         break
     print('Je hebt nog', levens, 'levens over.')
