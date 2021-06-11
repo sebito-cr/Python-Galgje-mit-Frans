@@ -57,6 +57,6 @@ while True:
         levens -= 2
         renderWoord()
     if levens <= 0:
-        print('Bif oof je hebt verloren! Het woord was ' + GeheimWoord)
+        print('Big oof je hebt verloren! Het woord was ' + GeheimWoord)
         break
     print('Je hebt nog', levens, 'levens over.')
